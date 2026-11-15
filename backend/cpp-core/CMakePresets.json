@@ -3,12 +3,14 @@
     "configurePresets": [
         {
             "name": "default",
-            "displayName": "vcpkg + GCC",
+            "hidden": true,
             "generator": "MinGW Makefiles",
             "binaryDir": "${sourceDir}/build",
             "cacheVariables": {
                 "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
-                "CMAKE_BUILD_TYPE": "Debug"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "VCPKG_TARGET_TRIPLET": "x64-mingw-dynamic",
+                "VCPKG_HOST_TRIPLET": "x64-mingw-dynamic"
             }
         }
     ]
