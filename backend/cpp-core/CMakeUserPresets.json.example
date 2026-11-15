@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "local-build",
+            "inherits": "default",
+            "displayName": "My Local Build",
+            "environment": {
+                "Path": "C:/ЗАМЕНИТЕ_НА_ВАШ_ПУТЬ/mingw64/bin;$penv{Path}"
+            }
+        }
+    ]
+}
