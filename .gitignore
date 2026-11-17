@@ -1,4 +1,4 @@
-.vscode/
 .wiki/
+.vscode/
 build/
 CMakeUserPresets.json
